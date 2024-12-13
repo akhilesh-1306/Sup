@@ -1,4 +1,5 @@
 import React from "react";
+import { FaEye } from "react-icons/fa";
 
 const StartupCard = ({ post }: { post: any }) => {
     return (
@@ -8,7 +9,7 @@ const StartupCard = ({ post }: { post: any }) => {
                 <img
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-full object-cover transition-transform transform hover:scale-110"
+                    className="w-full h-full object-cover transition-transform transform"
                 />
                 <span className="absolute top-2 right-2 bg-black bg-opacity-50 text-purple-400 px-3 py-1 rounded-md text-sm font-semibold">
                     {post.category}
@@ -28,14 +29,7 @@ const StartupCard = ({ post }: { post: any }) => {
                         })}
                     </span>
                     <div className="flex items-center gap-2">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="h-4 w-4 text-purple-400"
-                            viewBox="0 0 24 24"
-                            fill="currentColor"
-                        >
-                            <path d="M12 4a8 8 0 00-8 8c0 3.2 1.873 5.935 4.58 7.18l-.815 3.635a.5.5 0 00.72.544l4.096-2.187a8.01 8.01 0 004.419-.23 8 8 0 00-4.581-15.942z" />
-                        </svg>
+                        <FaEye/>
                         <span>{post.views} views</span>
                     </div>
                 </div>
