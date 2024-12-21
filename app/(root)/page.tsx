@@ -92,7 +92,8 @@ const HeroSection = async ({ searchParams }: { searchParams: Promise<{ query: st
         {
             _createdAt: new Date(),
             views: 60,
-            author: { _id: 1 },
+            author: { _id: 1, name:"Testing" },
+            _id : 1,
             description: "Description",
             image: "https://plus.unsplash.com/premium_photo-1684769161054-2fa9a998dcb6?q=80&w=1808&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             category: "Robots",
@@ -152,7 +153,7 @@ const HeroSection = async ({ searchParams }: { searchParams: Promise<{ query: st
             {/* Posts Section */}
             <section className="p-6">
                 <p className="text-white text-lg mb-6">
-                    {query ? `Results based on search: "${query}"` : "All Startups"}
+                    {query ? `Results based on search : "${query}"` : "All Startups"}
                 </p>
 
                 <ul className="grid md:grid-cols-3 sm:grid-cols-2 gap-5">
